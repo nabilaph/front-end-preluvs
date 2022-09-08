@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap");
+
+:root {
+  --primaryColor: #898aa6;
+  --secondaryColor: #d6efed;
+
+  /* font */
+  --mainFont: "Nunito Sans", sans-serif;
+}
+* {
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font-family: var(--mainFont);
+  font-size: 1.1rem;
+}
+i {
+  font-size: 1.8rem;
+}
+.heading {
+  font-size: 24px;
+  font-weight: 700;
+}
+.sub-heading {
+  font-weight: 300;
+}
+.input-group{
+  width: 70%;
+}
+.menu-wrapper{
+  margin-top: 160px;
+}
+.menu-wrapper a{
+  margin: 0 25px;
+}
+
+/* Navbar */
+.navbar {
+  background: var(--secondaryColor);
+  font-family: var(--mainFont);
+}
+.loginBtn {
+  background: var(--primaryColor);
+  color: white;
+}
+.regisBtn {
+  color: var(--primaryColor);
+  border: 2px solid var(--primaryColor) !important;
+}
+.cart-btn,
+.notif-btn {
+  color: var(--primaryColor);
+  border: 2px solid var(--primaryColor) !important;
+}
+.cart-btn:hover,
+.notif-btn:hover {
+  background: var(--primaryColor) !important;
+}
+.cart-btn a,
+.notif-btn a {
+  color: var(--primaryColor);
+}
+.cart-btn a:hover,
+.notif-btn a:hover {
+  color: var(--secondaryColor);
+}
+.icons-large{
+  display: none !important;
+}
+
+/* Tablet responsive */
+@media screen and (min-width: 768px) {
+}
+
+/* Desktop responsive */
+@media screen and (min-width: 992px) {
+
+  /* navbar */
+  .cart-btn,
+  .notif-btn {
+    display: none !important;
+  }
+  .icons-large{
+    display: flex !important;
+    color: var(--primaryColor);
+  }
+
+  /* carousel */
+  .carousel-section{
+    height: 100px !important;
+  }
+}
