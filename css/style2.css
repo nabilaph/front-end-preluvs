@@ -2,9 +2,9 @@
 
 :root {
   --primaryColor: #898aa6;
-  --primaryDarkColor: #6C6D89;
+  --primaryDarkColor: #6c6d89;
   --secondaryColor: #d6efed;
-  --secondaryDarkColor: #C3DEE1;
+  --secondaryDarkColor: #c3dee1;
 
   /* font */
   --mainFont: "Nunito Sans", sans-serif;
@@ -28,59 +28,67 @@ i {
 .sub-heading {
   font-weight: 300;
 }
-.btn-prim{
-    padding: 10px 24px !important;
-    border-radius: 8px;
-    background-color: var(--primaryColor);
-    color: white;
-    text-align: center;
+.btn-prim {
+  padding: 10px 24px !important;
+  border-radius: 8px;
+  background-color: var(--primaryColor);
+  color: white;
+  text-align: center;
 }
-.btn-prim:hover{
-    background-color: var(--primaryDarkColor);
-    color: white;
+.btn-prim:hover {
+  background-color: var(--primaryDarkColor);
+  color: white;
 }
-.btn-second{
-    padding: 10px 24px !important;
-    border-radius: 8px;
-    border: 2px solid var(--primaryColor);
-    color: var(--primaryColor);
-    text-align: center;
+.btn-second {
+  padding: 10px 24px !important;
+  border-radius: 8px;
+  border: 2px solid var(--primaryColor);
+  color: var(--primaryColor);
+  text-align: center;
 }
-.btn-second:hover{
-    background-color: var(--primaryColor);
-    color: white !important;
-    border: none;
+.btn-second:hover {
+  background-color: var(--primaryColor);
+  color: white !important;
+  border: none;
 }
-
 
 /* Navbar */
-.navbar{
-    background-color: var(--secondaryColor) !important;
+.navbar {
+  background-color: var(--secondaryColor) !important;
 }
-.input-group{
+.input-group {
   width: 60%;
 }
-.menu-wrapper{
+.menu-wrapper {
   margin-top: 150px;
 }
-.menu-wrapper a{
+.menu-wrapper a {
   margin: 0 25px;
+}
+
+/* header */
+.header {
+  margin-top: 200px;
 }
 
 /* Tablet responsive */
 @media screen and (max-width: 987px) {
-    .input-group{
-        width: 100%;
-    }
-    .dropdown button{
-        padding: 10px 24px !important;
-        text-align: start;
-        width: 100%;
-        background-color: var(--primaryColor) !important;
-    }
+  .input-group {
+    width: 100%;
+  }
+  .dropdown button {
+    padding: 10px 24px !important;
+    text-align: start;
+    width: 100%;
+    background-color: var(--primaryColor) !important;
+  }
+
+  /* header */
+  .header {
+    margin-top: 160px;
+  }
 }
 
 /* Mobile responsive */
 @media screen and (max-width: 768px) {
-
 }

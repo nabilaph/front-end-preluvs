@@ -26,15 +26,7 @@ i {
 .sub-heading {
   font-weight: 300;
 }
-.input-group{
-  width: 70%;
-}
-.menu-wrapper{
-  margin-top: 160px;
-}
-.menu-wrapper a{
-  margin: 0 25px;
-}
+
 
 /* Navbar */
 .navbar {
