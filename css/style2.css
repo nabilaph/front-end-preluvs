@@ -5,6 +5,7 @@
   --primaryDarkColor: #6c6d89;
   --secondaryColor: #d6efed;
   --secondaryDarkColor: #c3dee1;
+  --black: #1d1d1d;
 
   /* font */
   --mainFont: "Nunito Sans", sans-serif;
@@ -12,7 +13,7 @@
 * {
   box-sizing: border-box;
   list-style: none;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 body {
   font-family: var(--mainFont);
@@ -51,6 +52,17 @@ i {
   color: white !important;
   border: none;
 }
+.section-margin {
+  margin-top: 80px;
+}
+.see-all{
+  font-size: 1rem;
+  color: var(--primaryColor);
+}
+.see-all:hover{
+  color: var(--primaryColor);
+  text-decoration: underline !important;
+}
 
 /* Navbar */
 .navbar {
@@ -71,6 +83,26 @@ i {
   margin-top: 200px;
 }
 
+/* Genres */
+.card-genre {
+  background-color: var(--secondaryColor);
+}
+.card-genre:hover {
+  border: 2px solid var(--primaryColor);
+}
+.card-genre p {
+  color: var(--black);
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.card-genre .img-genre img {
+  top: -60px;
+}
+
+
+/* New uploads */
+
+
 /* Tablet responsive */
 @media screen and (max-width: 987px) {
   .input-group {
@@ -87,8 +119,16 @@ i {
   .header {
     margin-top: 160px;
   }
+
+  /* genre */
+  .genres .row2 {
+    display: none;
+  }
 }
 
 /* Mobile responsive */
 @media screen and (max-width: 768px) {
+  .click-genre {
+    margin-bottom: 20px;
+  }
 }
