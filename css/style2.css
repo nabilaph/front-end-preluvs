@@ -121,6 +121,38 @@ i {
   color: var(--primaryColor);
 }
 
+/* seller leaderboard */
+.seller-leaderboard i{
+  font-size: 1.1rem  !important;
+}
+.seller-leaderboard .table-container{
+  background-color: var(--secondaryColor);
+}
+.seller-leaderboard a{
+  color: var(--primaryDarkColor);
+}
+.seller-leaderboard a:hover{
+  text-decoration: underline !important;
+}
+
+/* footer */
+footer{
+  margin-top: 150px;
+  background-color: var(--secondaryColor);
+}
+footer a{
+  color: var(--primaryDarkColor);
+}
+footer a:hover{
+  color: var(--primaryDarkColor);
+  text-decoration: underline !important;
+}
+footer .row-copy{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}
 
 /* Tablet responsive */
 @media screen and (max-width: 987px) {
@@ -147,8 +179,13 @@ i {
 
 /* Mobile responsive */
 @media screen and (max-width: 768px) {
+  
+  /* genre */
   .click-genre {
     margin-bottom: 20px;
+  }
+  .genres .card-genre p{
+    font-size: 16px;
   }
 
   /* new uploads */
