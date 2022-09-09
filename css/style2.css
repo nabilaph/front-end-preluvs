@@ -101,6 +101,25 @@ i {
 
 
 /* New uploads */
+.btn-cart{
+  background-color: var(--primaryColor);
+  color: white;
+  padding: 8px 10px;
+  display: flex;
+  align-items: center;
+}
+.btn-cart:hover{
+  background-color: var(--primaryDarkColor);
+  color: white;
+}
+.new-uploads .title{
+  font-size: 25px;
+  font-weight: 800;
+}
+.new-uploads .card-body .badge{
+  background-color: var(--secondaryColor);
+  color: var(--primaryColor);
+}
 
 
 /* Tablet responsive */
@@ -130,5 +149,17 @@ i {
 @media screen and (max-width: 768px) {
   .click-genre {
     margin-bottom: 20px;
+  }
+
+  /* new uploads */
+  .new-uploads .title,.price{
+    font-size: 18px;
+  }
+  .new-uploads .author{
+    font-size: 14px;
+  }
+  .new-uploads .btn-cart{
+    padding: 6px 8px;
+    font-size: 16px;
   }
 }

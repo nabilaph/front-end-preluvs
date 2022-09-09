@@ -76,10 +76,10 @@
             <a class="nav-link" href="#">
                 Home
             </a>
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="#genres">
                 Genres
             </a>
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="#new-uploads">
                 New uploads
             </a>
             <a class="nav-link" href="#">
@@ -87,6 +87,8 @@
             </a>
         </div>
     </div>
+
+    
 
     <!-- Header -->
     <section class="header">
@@ -126,18 +128,19 @@
     </section>
 
     <!-- Genres -->
-    <section class="genres section-margin">
+    <section class="genres section-margin" id="genres">
         <div class="container">
             <div class="row">
                 <div class="title col d-flex justify-content-between">
                     <h1 class="heading">Book genres</h1>
-                    <a class="see-all" href="#">See all genres</i></a>
+                    <a class="see-all" href="#">View all</i></a>
                 </div>
             </div>
             <div class="row mt-5">
                 <div class="col-lg-3 col-sm-6 mb-sm-4 click-genre">
                     <a href="#">
-                        <div class="card-genre rounded-3 d-flex justify-content-between align-items-center px-3 py-3 h-100">
+                        <div
+                            class="card-genre rounded-3 d-flex justify-content-between align-items-center px-3 py-3 h-100">
                             <p>
                                 Comics
                             </p>
@@ -150,7 +153,8 @@
                 </div>
                 <div class="col-lg-3 col-sm-6 mb-sm-4 click-genre">
                     <a href="#">
-                        <div class="card-genre rounded-3 d-flex justify-content-between align-items-center px-3 py-3 h-100">
+                        <div
+                            class="card-genre rounded-3 d-flex justify-content-between align-items-center px-3 py-3 h-100">
                             <p>
                                 Comics
                             </p>
@@ -163,7 +167,8 @@
                 </div>
                 <div class="col-lg-3 col-sm-6 mb-sm-4 click-genre">
                     <a href="#">
-                        <div class="card-genre rounded-3 d-flex justify-content-between align-items-center px-3 py-3 h-100">
+                        <div
+                            class="card-genre rounded-3 d-flex justify-content-between align-items-center px-3 py-3 h-100">
                             <p>
                                 Comics
                             </p>
@@ -176,61 +181,8 @@
                 </div>
                 <div class="col-lg-3 col-sm-6 mb-sm-4 click-genre">
                     <a href="#">
-                        <div class="card-genre rounded-3 d-flex justify-content-between align-items-center px-3 py-3 h-100">
-                            <p>
-                                Comics
-                            </p>
-                            <div class="img-genre position-relative">
-                                <img src="img/books-category.png" class="position-absolute end-0" alt="" width="100">
-                            </div>
-                        </div>
-                    </a>
-
-                </div>
-            </div>
-            <div class="row mt-4 row2">
-                <div class="col-lg-3">
-                    <a href="#">
-                        <div class="card-genre rounded-3 d-flex justify-content-between align-items-center px-3 py-3 h-100">
-                            <p>
-                                Comics
-                            </p>
-                            <div class="img-genre position-relative">
-                                <img src="img/books-category.png" class="position-absolute end-0" alt="" width="100">
-                            </div>
-                        </div>
-                    </a>
-
-                </div>
-                <div class="col-lg-3">
-                    <a href="#">
-                        <div class="card-genre rounded-3 d-flex justify-content-between align-items-center px-3 py-3 h-100">
-                            <p>
-                                Comics
-                            </p>
-                            <div class="img-genre position-relative">
-                                <img src="img/books-category.png" class="position-absolute end-0" alt="" width="100">
-                            </div>
-                        </div>
-                    </a>
-
-                </div>
-                <div class="col-lg-3">
-                    <a href="#">
-                        <div class="card-genre rounded-3 d-flex justify-content-between align-items-center px-3 py-3 h-100">
-                            <p>
-                                Comics
-                            </p>
-                            <div class="img-genre position-relative">
-                                <img src="img/books-category.png" class="position-absolute end-0" alt="" width="100">
-                            </div>
-                        </div>
-                    </a>
-
-                </div>
-                <div class="col-lg-3">
-                    <a href="#">
-                        <div class="card-genre rounded-3 d-flex justify-content-between align-items-center px-3 py-3 h-100">
+                        <div
+                            class="card-genre rounded-3 d-flex justify-content-between align-items-center px-3 py-3 h-100">
                             <p>
                                 Comics
                             </p>
@@ -246,12 +198,78 @@
     </section>
 
     <!-- New uploads -->
-    <section class="new-uploads section-margin">
+    <section class="new-uploads section-margin" id="new-uploads">
         <div class="container">
             <div class="row">
-                <div class="title col d-flex justify-content-between">
+                <div class="col d-flex justify-content-between">
                     <h1 class="heading">New uploads</h1>
-                    <a class="see-all" href="#">See all new uploads</a>
+                    <a class="see-all" href="#">View all</a>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-lg-3 col-6">
+                    <div class="card card-body p-lg-4 p-sm-3 rounded-4">
+                        <img src="img/comics-miko.png" alt="" class="img-fluid rounded-4">
+                        <h3 class="title mt-3">Miiko</h3>
+                        <p class="author">Siapa aja</p>
+                        <div>
+                            <a href="#" class="badge">Comics</a>
+                        </div>
+                        <div class="detail d-flex justify-content-between align-items-center mt-2">
+                            <h5 class="price fw-semibold m-0">
+                                Rp. 20.000
+                            </h5>
+                            <a href="" class="btn-cart rounded text-center"><i class='bx bx-cart-alt'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="card card-body p-lg-4 p-sm-3 rounded-4">
+                        <img src="img/comics-miko.png" alt="" class="img-fluid rounded-4">
+                        <h3 class="title mt-3">Miiko</h3>
+                        <p class="author">Siapa aja</p>
+                        <div>
+                            <a href="#" class="badge">Comics</a>
+                        </div>
+                        <div class="detail d-flex justify-content-between align-items-center mt-2">
+                            <h5 class="price fw-semibold m-0">
+                                Rp. 20.000
+                            </h5>
+                            <a href="" class="btn-cart rounded text-center"><i class='bx bx-cart-alt'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6 mt-3 mt-lg-0">
+                    <div class="card card-body p-lg-4 p-sm-3 rounded-4">
+                        <img src="img/comics-miko.png" alt="" class="img-fluid rounded-4">
+                        <h3 class="title mt-3">Miiko</h3>
+                        <p class="author">Siapa aja</p>
+                        <div>
+                            <a href="#" class="badge">Comics</a>
+                        </div>
+                        <div class="detail d-flex justify-content-between align-items-center mt-2">
+                            <h5 class="price fw-semibold m-0">
+                                Rp. 20.000
+                            </h5>
+                            <a href="" class="btn-cart rounded text-center"><i class='bx bx-cart-alt'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6 mt-3 mt-lg-0">
+                    <div class="card card-body p-lg-4 p-sm-3 rounded-4">
+                        <img src="img/comics-miko.png" alt="" class="img-fluid rounded-4">
+                        <h3 class="title mt-3">Miiko</h3>
+                        <p class="author">Siapa aja</p>
+                        <div>
+                            <a href="#" class="badge">Comics</a>
+                        </div>
+                        <div class="detail d-flex justify-content-between align-items-center mt-2">
+                            <h5 class="price fw-semibold m-0">
+                                Rp. 20.000
+                            </h5>
+                            <a href="" class="btn-cart rounded text-center"><i class='bx bx-cart-alt'></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
