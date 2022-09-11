@@ -64,93 +64,69 @@ i {
   text-decoration: underline !important;
 }
 
-/* Navbar */
-.navbar {
-  background-color: var(--secondaryColor) !important;
+a {
+  color: var(--primaryColor);
 }
-.input-group {
-  width: 60%;
-}
-.menu-wrapper {
-  margin-top: 150px;
-}
-.menu-wrapper a {
-  margin: 0 25px;
+a:hover {
+  color: var(--primaryDarkColor);
 }
 
-.profile-dd > a{
-  color: var(--bs-nav-link-color) !important;
+/* breadcrumbs */
+.bc {
+  margin-left: 80px;
+  font-size: 0.9rem;
 }
-.list-nav a{
+.bc a {
   color: var(--primaryColor) !important;
+  text-decoration: underline !important;
 }
-.list-nav a:hover{
+.bc a:hover {
   color: var(--primaryDarkColor) !important;
 }
 
-/* content */
-.content{
-  margin-top: 180px !important;
-}
-
-/* profile area */
-.profile-area {
-  padding: 80px 0px;
-}
-.card {
-  overflow: hidden;
-  border-radius: 16px;
-  height: 440px;
-}
-.card2{
-  height: fit-content;
-}
-.img1 img {
-  height: 200px;
-  border-top-right-radius: 15px;
-  border-top-left-radius: 15px;
-  width: 100%;
-  object-fit: cover;
-
-}
-.img2 img {
-  position: relative;
+/* profile picture */
+.seller img {
   display: block;
-  margin: 80px auto 0px auto;
   z-index: 1;
-  width: 140px;
-  height: 140px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
-  border: 7px solid white;
-  top: -60%;
 }
-.main-text {
-  position: relative;
-  top: -25%;
+.seller a {
+  font-size: 1rem;
 }
 
-/* tabbed */
-.nav-item button{
+/* book description */
+.badge {
+  background-color: var(--secondaryColor);
   color: var(--primaryColor);
 }
-.nav-item button:hover{
-  text-decoration: underline !important;
-  color: var(--primaryColor);
-}
-.nav-item > .active{
-  background-color: var(--primaryColor) !important;
-}
-.table-bg{
-  background-color: var(--secondaryColor) !important;
+.picture {
+  height: fit-content;
 }
 
 /* Tablet responsive */
 @media screen and (max-width: 987px) {
-  .btn-prim{
-    width: fit-content !important;
+  .book-desc {
+    width: inherit;
   }
+
+  /* .content .buttons {
+    margin: 20px;
+  } */
+
 }
 
 /* Mobile responsive */
 @media screen and (max-width: 768px) {
+  /* breadcrumbs */
+  .bc {
+    margin-left: 50px;
+    font-size: 0.9rem;
+  }
+
+  p,
+  a {
+    font-size: 1rem;
+  }
 }
