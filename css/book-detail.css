@@ -85,7 +85,7 @@ a:hover {
 }
 
 /* profile picture */
-.seller img {
+.prof-pict {
   display: block;
   z-index: 1;
   width: 48px;
@@ -105,6 +105,17 @@ a:hover {
   height: fit-content;
 }
 
+/* comment section */
+.date-comment {
+  font-size: 12px;
+}
+.comment > .user-comment > img {
+  width: 62px !important;
+}
+.comment > .user-comment > .comment-col > .user-reply > img {
+  width: 64px !important;
+}
+
 /* Tablet responsive */
 @media screen and (max-width: 987px) {
   .book-desc {
@@ -115,6 +126,12 @@ a:hover {
     margin: 20px;
   } */
 
+  .comment > .user-comment > img {
+    width: 140px !important;
+  }
+  .comment > .user-comment > .comment-col > .user-reply > img {
+    width: 180px !important;
+  }
 }
 
 /* Mobile responsive */
@@ -128,5 +145,12 @@ a:hover {
   p,
   a {
     font-size: 1rem;
+  }
+
+  .comment > .user-comment > img {
+    width: 170px !important;
+  }
+  .comment > .user-comment > .comment-col > .user-reply > img {
+    width: 250px !important;
   }
 }
