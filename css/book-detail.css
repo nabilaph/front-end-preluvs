@@ -73,6 +73,7 @@ a:hover {
 
 /* breadcrumbs */
 .bc {
+  margin-top: 200px;
   margin-left: 80px;
   font-size: 0.9rem;
 }

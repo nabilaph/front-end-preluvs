@@ -64,20 +64,6 @@ i {
   text-decoration: underline !important;
 }
 
-/* Navbar */
-.navbar {
-  background-color: var(--secondaryColor) !important;
-}
-.input-group {
-  width: 60%;
-}
-.menu-wrapper {
-  margin-top: 150px;
-}
-.menu-wrapper a {
-  margin: 0 25px;
-}
-
 /* header */
 .header {
   margin-top: 200px;
