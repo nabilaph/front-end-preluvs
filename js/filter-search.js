@@ -4,31 +4,36 @@ let products = {
       productName: "Miko - Ono Eriko",
       category: "Comic",
       price: "30.000",
-      image: "miko_comik.jpeg",
+      image: "img/miko_comik.jpeg",
+      link: "book-detail.html",
     },
     {
       productName: "Hujan - Tere Liye",
       category: "Novel",
       price: "25.000",
-      image: "hujan_novel.jpg",
+      image: "img/hujan_novel.jpg",
+      link: "book-detail.html",
     },
     {
       productName: "TPS 2023 - Retta Prawesti",
       category: "Education",
       price: "40.000",
-      image: "tps_education.jpg",
+      image: "img/tps_education.jpg",
+      link: "book-detail.html",
     },
     {
       productName: "Materi Pemrograman Web untuk Pemula - Rohi Abdullah",
       category: "Technology",
       price: "50.000",
-      image: "pemograman_web_technology.jpg",
+      image: "img/pemograman_web_technology.jpg",
+      link: "book-detail.html",
     },
     {
       productName: "Kecerdasan Matematis - Junaid Mubeen",
       category: "Sains",
       price: "40.000",
-      image: "kecerdasan_matematis_Sains.jpg",
+      image: "img/kecerdasan_matematis_Sains.jpg",
+      link: "book-detail.html",
     },
   ],
 };
@@ -38,6 +43,13 @@ for (let i of products.data) {
   let card = document.createElement("div");
   //Card should have category and should stay hidden initially
   card.classList.add("card", i.category, "hide");
+  card.addEventListener(
+    "click",
+    function () {
+      location.href = i.link;
+    },
+    false
+  );
   //image div
   let imgContainer = document.createElement("div");
   imgContainer.classList.add("image-container");
@@ -49,6 +61,7 @@ for (let i of products.data) {
   //container
   let container = document.createElement("div");
   container.classList.add("container");
+  
   //product name
   let name = document.createElement("h5");
   name.classList.add("product-name");

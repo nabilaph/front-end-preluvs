@@ -25,6 +25,11 @@
     width: 190px;
     border-radius: 50%;
   } */
+
+   a{
+    text-decoration: none;
+    text-align: center;
+  }
   
   .wrapper{
     max-width: 1000px;
@@ -111,7 +116,7 @@
   form input:not(:last-child) {
     margin-bottom: 0.9em;
   }
-  form button {
+  form .btn {
     font-size: 0.95em;
     padding: 0.8em 0;
     border-radius: 2em;
