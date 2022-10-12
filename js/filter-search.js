@@ -26,14 +26,12 @@ let products = {
       category: "Technology",
       price: "50.000",
       image: "img/pemograman_web_technology.jpg",
-      link: "book-detail.html",
     },
     {
       productName: "Kecerdasan Matematis - Junaid Mubeen",
       category: "Sains",
       price: "40.000",
       image: "img/kecerdasan_matematis_Sains.jpg",
-      link: "book-detail.html",
     },
   ],
 };
@@ -110,7 +108,7 @@ function filterProduct(value) {
 }
 
 //Search button click
-document.getElementById("search").addEventListener("click", () => {
+document.getElementById("buttons").addEventListener("click", () => {
   //initializations
   let searchInput = document.getElementById("search-input").value;
   let elements = document.querySelectorAll(".product-name");

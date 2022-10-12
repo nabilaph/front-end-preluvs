@@ -19,7 +19,6 @@
 body {
   font-family: var(--mainFont);
   font-size: 1.1rem;
-  background-color: white;
 }
 i {
   font-size: 1.8rem;
@@ -54,38 +53,25 @@ i {
   color: white !important;
   border: none;
 }
-.section-margin {
-  margin-top: 80px;
-}
 
-h3{
-    /* padding: 30px 0; */
-    text-align: center;
-    /* text-transform: uppercase; */
-    font-family: var(--mainFont);
-    color: var(--primaryDarkColor);
-    /* text-shadow: 4px 9px 0px rgba(201, 187, 207, 0.7); */
-    font-size: 40px;
+/* Genres */
+.genres {
+  margin-top: 180px;
 }
-.header-bill{
-    margin-top: 150px;
+.card-genre {
+  background-color: var(--secondaryColor);
+  height: 170px;
 }
-.width30 {
-    width: 30%;
+.card-genre:hover {
+  border: 2px solid var(--primaryColor);
 }
-.width70 {
-    width: 70%;
+.card-genre p {
+  margin-left: 30px;
+  color: var(--black);
+  font-size: 2rem;
+  font-weight: 600;
 }
-.floatL {
-    float: left;
-}
-.floatR {
-    float: right;
-}
-.boxstyle{
-    padding: 30px;
-    border-radius: 25px;
-    border-top: 6px solid var(--primaryColor);
-    border-bottom: 6px solid var(--primaryColor);
-    margin-top: 20px;
+.card-genre .img-genre img {
+  top: -120px;
+  width: 200px;
 }

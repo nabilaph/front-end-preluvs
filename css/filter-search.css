@@ -1,18 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap");
+
+:root {
+  --primaryColor: #898aa6;
+  --primaryDarkColor: #6c6d89;
+  --secondaryColor: #d6efed;
+  --secondaryDarkColor: #c3dee1;
+  --black: #1d1d1d;
+
+  /* font */
+  --mainFont: "Nunito Sans", sans-serif;
+}
+
 * {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
+  list-style: none;
+  text-decoration: none !important;
+  /* padding: 0;
+  margin: 0; */
   border: none;
   outline: none;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--mainFont);
 }
 body {
-  background-color: #f5f8ff;
+  font-family: var(--mainFont);
+  font-size: 1.1rem;
+  background-color: white;
 }
+i {
+  font-size: 1.8rem;
+}
+.heading {
+  font-size: 24px;
+  font-weight: 700;
+}
+.sub-heading {
+  font-weight: 300;
+}
+.btn-prim {
+  padding: 10px 24px !important;
+  border-radius: 8px;
+  background-color: var(--primaryColor);
+  color: white;
+  text-align: center;
+}
+.btn-prim:hover {
+  background-color: var(--primaryDarkColor);
+  color: white;
+}
+.btn-second {
+  padding: 10px 24px !important;
+  border-radius: 8px;
+  border: 2px solid var(--primaryColor);
+  color: var(--primaryColor);
+  text-align: center;
+}
+.btn-second:hover {
+  background-color: var(--primaryColor);
+  color: white !important;
+  border: none;
+}
+.section-margin {
+  margin-top: 80px;
+}
+
 .wrapper {
   width: 95%;
   margin: 0 auto;
+  margin-top: 150px;
 }
+
 #search-container {
   margin: 1em 0;
 }
@@ -23,26 +79,26 @@ body {
   padding: 1em 0.3em;
 }
 #search-container input:focus {
-  border-bottom-color: #6759ff;
+  border-bottom-color: var(--primaryColor);
 }
 #search-container button {
   padding: 1em 2em;
   margin-left: 1em;
-  background-color: #6759ff;
+  background-color: var(--primaryColor);
   color: #ffffff;
   border-radius: 5px;
   margin-top: 0.5em;
+  position: absolute;
 }
 .button-value {
-  border: 2px solid #6759ff;
-  padding: 1em 2.2em;
+  border: 2px solid var(--primaryColor);
+  padding: 0.5em 2em;
   border-radius: 3em;
-  background-color: transparent;
-  color: #6759ff;
+  color: var(--black);
   cursor: pointer;
 }
 .active {
-  background-color: #6759ff;
+  background-color: var(--primaryDarkColor);
   color: #ffffff;
 }
 #products {
@@ -62,24 +118,25 @@ body {
 }
 .image-container {
   text-align: center;
+  margin-bottom: 20px;
 }
-img {
+.image-container img {
   max-width: 100%;
   object-fit: contain;
   height: 15em;
 }
-.container {
+.container-product {
   padding-top: 1em;
   color: #110f29;
 }
-.container h5 {
+.container-product h5 {
   font-weight: 500;
 }
 .hide {
   display: none;
 }
 @media screen and (max-width: 720px) {
-  img {
+  .image-container img {
     max-width: 100%;
     object-fit: contain;
     height: 10em;
@@ -93,4 +150,3 @@ img {
     grid-column-gap: 1em;
   }
 }
-

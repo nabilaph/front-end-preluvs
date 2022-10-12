@@ -1,68 +1,11 @@
-let usernameRef = document.getElementById("username");
-let passwordRef = document.getElementById("password");
-let eyeL = document.querySelector(".eyeball-l");
-let eyeR = document.querySelector(".eyeball-r");
-let handL = document.querySelector(".hand-l");
-let handR = document.querySelector(".hand-r");
+const sign_in_btn = document.querySelector("#sign-in-btn");
+const sign_up_btn = document.querySelector("#sign-up-btn");
+const container = document.querySelector(".container");
 
-let normalEyeStyle = () => {
-  eyeL.style.cssText = `
-    left:0.6em;
-    top: 0.6em;
-  `;
-  eyeR.style.cssText = `
-  right:0.6em;
-  top:0.6em;
-  `;
-};
+sign_up_btn.addEventListener("click", () => {
+  container.classList.add("sign-up-mode");
+});
 
-let normalHandStyle = () => {
-  handL.style.cssText = `
-        height: 2.81em;
-        top:8.4em;
-        left:7.5em;
-        transform: rotate(0deg);
-    `;
-  handR.style.cssText = `
-        height: 2.81em;
-        top: 8.4em;
-        right: 7.5em;
-        transform: rotate(0deg)
-    `;
-};
-//When clicked on username input
-usernameRef.addEventListener("focus", () => {
-  eyeL.style.cssText = `
-    left: 0.75em;
-    top: 1.12em;  
-  `;
-  eyeR.style.cssText = `
-    right: 0.75em;
-    top: 1.12em;
-  `;
-  normalHandStyle();
-});
-//When clicked on password input
-passwordRef.addEventListener("focus", () => {
-  handL.style.cssText = `
-        height: 6.56em;
-        top: 3.87em;
-        left: 11.75em;
-        transform: rotate(-155deg);    
-    `;
-  handR.style.cssText = `
-    height: 6.56em;
-    top: 3.87em;
-    right: 11.75em;
-    transform: rotate(155deg);
-  `;
-  normalEyeStyle();
-});
-//When clicked outside username and password input
-document.addEventListener("click", (e) => {
-  let clickedElem = e.target;
-  if (clickedElem != usernameRef && clickedElem != passwordRef) {
-    normalEyeStyle();
-    normalHandStyle();
-  }
+sign_in_btn.addEventListener("click", () => {
+  container.classList.remove("sign-up-mode");
 });
