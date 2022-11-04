@@ -17,6 +17,8 @@
 
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/billing.css" />
+    <link rel="stylesheet" href="css/cart.css" />
+
 
     <!-- BoxIcon -->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
@@ -89,11 +91,10 @@
     <header class="header-bill" style="height: 60px; padding: 5px;">
         <h3 class="fw-bold" style="text-align: center;">Billing Address</h3>
     </header>
+
     <div class="container">
         <div class="row">
-            <div class="cool-sm-1"></div>
-            <div class="cool-sm-2"></div>
-            <div class="cool-sm-6 bg-light boxstyle">
+            <div class="col-lg-6 bg-light boxstyle">
 
                 <form name="theform" action="" method="post">
                     <div class="form-group">
@@ -101,92 +102,42 @@
                         <div class="width70 floatR"><input type="text" id="txtlname" name="txtlanme"
                                 placeholder="Last Name" class="form-control">
                         </div><br><br>
-                        <form name="theform" action="" method="post">
-                            <div class="form-group">
-                                <div class="width30 floatL"><label>Phone</label></div>
-                                <div class="width70 floatR"><input type="text" id="txtphone" name="txtphone"
-                                        placeholder="Ship to Phone" class="form-control">
-                                </div><br><br>
-                                <form name="theform" action="" method="post">
-                                    <div class="form-group">
-                                        <div class="width30 floatL"><label>Email</label></div>
-                                        <div class="width70 floatR"><input type="text" id="txtemail" name="txtemail"
-                                                placeholder="Ship to Email" class="form-control">
-                                        </div><br><br>
-                                        <form name="theform" action="" method="post">
-                                            <div class="form-group">
-                                                <div class="width30 floatL"><label>Address</label></div>
-                                                <div class="width70 floatR"><input type="text" id="txtaddress"
-                                                        name="txtaddress" placeholder="Ship to Address"
-                                                        class="form-control">
-                                                </div><br><br>
-                                                <form name="theform" action="" method="post">
-                                                    <div class="form-group">
-                                                        <div class="width30 floatL"><label>City</label></div>
-                                                        <div class="width70 floatR"><input type="text" id="txtcity"
-                                                                name="txtcity" placeholder="Ship to City"
-                                                                class="form-control">
-                                                        </div><br><br>
-                                                        <form name="theform" action="" method="post">
+                    </div>
+                    <div class="form-group">
+                        <div class="width30 floatL"><label>Phone</label></div>
+                        <div class="width70 floatR"><input type="text" id="txtphone" name="txtphone"
+                                placeholder="Ship to Phone" class="form-control">
+                        </div><br><br>
+                    </div>
+                    <div class="form-group">
+                        <div class="width30 floatL"><label>Email</label></div>
+                        <div class="width70 floatR"><input type="text" id="txtemail" name="txtemail"
+                                placeholder="Ship to Email" class="form-control">
+                        </div><br><br>
+                    </div>
+                    <div class="form-group">
+                        <div class="width30 floatL"><label>Address</label></div>
+                        <div class="width70 floatR"><input type="text" id="txtaddress" name="txtaddress"
+                                placeholder="Ship to Address" class="form-control">
+                        </div><br><br>
+                    </div>
+                    <div class="form-group">
+                        <div class="width30 floatL"><label>City</label></div>
+                        <div class="width70 floatR"><input type="text" id="txtcity" name="txtcity"
+                                placeholder="Ship to City" class="form-control">
+                        </div><br><br>
+                    </div>
+                </form>
 
-                                                            <hr />
-                                                            <p><b>Billing Information <label><input type="checkbox"
-                                                                            value="" id="check-address">Same as
-                                                                        billing?</label></b></p>
-
-                                                            <div class="form-group">
-                                                                <div class="width30 floatL"><label>Recipient</label>
-                                                                </div>
-                                                                <div class="width70 floatR"><input type="text"
-                                                                        id="txtlname_billing" name="txtlname_billing"
-                                                                        placeholder="Last  Name" class="form-control">
-                                                                </div><br><br>
-                                                                <div class="form-group">
-                                                                    <div class="width30 floatL"><label>Phone</label>
-                                                                    </div>
-                                                                    <div class="width70 floatR"><input type="text"
-                                                                            id="txtphone_billing"
-                                                                            name="txtphone_billing"
-                                                                            placeholder="Ship to Phone"
-                                                                            class="form-control">
-                                                                    </div><br><br>
-                                                                    <div class="form-group">
-                                                                        <div class="width30 floatL"><label>Email</label>
-                                                                        </div>
-                                                                        <div class="width70 floatR"><input type="text"
-                                                                                id="txtemail_billing"
-                                                                                name="txtemail_billing"
-                                                                                placeholder="Ship to Email"
-                                                                                class="form-control">
-                                                                        </div><br><br>
-                                                                        <div class="form-group">
-                                                                            <div class="width30 floatL">
-                                                                                <label>Address</label>
-                                                                            </div>
-                                                                            <div class="width70 floatR"><input
-                                                                                    type="text" id="txtaddress_billing"
-                                                                                    name="txtaddress_billing"
-                                                                                    placeholder="Ship to Address"
-                                                                                    class="form-control">
-                                                                            </div><br><br>
-                                                                            <div class="form-group">
-                                                                                <div class="width30 floatL">
-                                                                                    <label>City</label>
-                                                                                </div>
-                                                                                <div class="width70 floatR"><input
-                                                                                        type="text" id="txtcity_billing"
-                                                                                        name="txtcity_billing"
-                                                                                        placeholder="Ship to City"
-                                                                                        class="form-control">
-                                                                                </div><br><br>
-
-                                                        </form>
-                                                    </div>
-                                                    <div class="col-sm-1"></div>
-                                                    <div class="col-sm-2"></div>
-                                            </div>
-                                    </div>
-                            </div>
+            </div>
+            <div class="col-lg-6 right-bar mt-4 d-flex flex-column text-center justify-content-center align-items-center">
+                <p class="text-center"> Silahkan selesaikan pembayaran</p>
+                <div class="d-flex flex-column justify-content-center align-items-center bg-danger bg-opacity-25 p-2 ">
+                    <p> Bayar sebelum 8 Oktober 2022, 3:04 WIB</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
